@@ -5,9 +5,12 @@ export interface Product {
   category: Category;
   name: string;
   ageRange: string;
-  image: string;
-  video: string;
-  dimensions: string;
+  image1?: string;
+  image2?: string;
+  image3?: string;
+  image4?: string;
+  video?: string;
+  dimensions?: string;
   description: string;
   badge?: string;
 }

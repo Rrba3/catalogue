@@ -20,7 +20,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   // For testing e-commerce gallery feel, we repeat the main image as we only have 1 image per product
-  const mockImages = [product.image, product.image, product.image, product.image];
+  const mockImages = [product.image1, product.image2, product.image3, product.image4];
 
   // Reset video and image index when product changes
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [handleKeyDown]);
 
-  const videoId = getYouTubeId(product.video);
+  const videoId = getYouTubeId(product.video || "");
 
   return (
     <div
@@ -108,11 +108,10 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                     setShowVideo(false);
                     setActiveImageIndex(idx);
                   }}
-                  className={`relative flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 cursor-pointer ${
-                    !showVideo && activeImageIndex === idx
-                      ? "border-primary shadow-md"
-                      : "border-transparent opacity-70 hover:opacity-100 hover:border-slate-300"
-                  }`}
+                  className={`relative flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 cursor-pointer ${!showVideo && activeImageIndex === idx
+                    ? "border-primary shadow-md"
+                    : "border-transparent opacity-70 hover:opacity-100 hover:border-slate-300"
+                    }`}
                   aria-label={`View image ${idx + 1}`}
                 >
                   <img
@@ -126,11 +125,10 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               {product.video && (
                 <button
                   onClick={() => setShowVideo(true)}
-                  className={`relative flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 flex items-center justify-center bg-slate-200 cursor-pointer ${
-                    showVideo
-                      ? "border-primary shadow-md"
-                      : "border-transparent opacity-70 hover:opacity-100 hover:border-slate-300"
-                  }`}
+                  className={`relative flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 flex items-center justify-center bg-slate-200 cursor-pointer ${showVideo
+                    ? "border-primary shadow-md"
+                    : "border-transparent opacity-70 hover:opacity-100 hover:border-slate-300"
+                    }`}
                   aria-label="Play video"
                 >
                   <span className="text-2xl drop-shadow-md">▶️</span>
