@@ -5,5 +5,5 @@ import { Product } from "./types";
 const products = productsData as Product[];
 
 export default function Home() {
-  return <h1>WORKING</h1>;
+  return <CatalogApp products={products} />;
 }

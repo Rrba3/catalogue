@@ -18,7 +18,7 @@ export default function ProductCard({ product, onClick }: ProductCardProps) {
       {/* Image */}
       <div className="relative w-full h-[220px] flex items-center justify-center">
         <img
-          src={product.image}
+          src={product.image1}
           alt={product.name}
           className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl mobile-tap-animate"
           loading="lazy"

@@ -8,7 +8,8 @@ interface ProductModalProps {
   onClose: () => void;
 }
 
-function getYouTubeId(url: string): string | null {
+function getYouTubeId(url?: string): string | null {
+  if (!url) return null;
   const match = url.match(
     /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&?/]+)/
   );
