@@ -36,7 +36,9 @@ export default function ProductCard({ product, onClick }: ProductCardProps) {
         <h3 className="font-bold text-foreground text-lg group-hover:text-primary transition-colors duration-200">
           {product.name}
         </h3>
-        <p className="text-sm text-muted font-medium mt-1">Âge {product.ageRange} ans</p>
+        <p className="text-sm text-muted font-medium mt-1">
+          {product.price != null ? `${product.price.toLocaleString("fr-FR")} TND` : "—"}
+        </p>
       </div>
     </button>
   );
