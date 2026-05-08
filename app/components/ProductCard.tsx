@@ -6,7 +6,7 @@ interface ProductCardProps {
   product: Product;
   onClick: () => void;
 }
-
+//test
 export default function ProductCard({ product, onClick }: ProductCardProps) {
   return (
     <button
