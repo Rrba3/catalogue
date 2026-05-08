@@ -36,9 +36,26 @@ export default function ProductCard({ product, onClick }: ProductCardProps) {
         <h3 className="font-bold text-foreground text-lg group-hover:text-primary transition-colors duration-200">
           {product.name}
         </h3>
-        <p className="text-sm text-muted font-medium mt-1">
-          {product.price != null ? `${product.price.toLocaleString("fr-FR")} TND` : "—"}
-        </p>
+
+        {product.price != null ? (
+          <div className="mt-2 flex items-center gap-2 flex-wrap">
+            <span className="text-base font-bold text-primary">
+              {product.price.toLocaleString("fr-FR")} TND
+            </span>
+            {product.originalPrice != null && (
+              <>
+                <span className="text-sm text-muted line-through">
+                  {product.originalPrice.toLocaleString("fr-FR")} TND
+                </span>
+                <span className="text-xs font-bold bg-red-500 text-white px-2 py-0.5 rounded-full">
+                  -{Math.round((1 - product.price / product.originalPrice) * 100)}%
+                </span>
+              </>
+            )}
+          </div>
+        ) : (
+          <p className="text-sm text-muted font-medium mt-1">—</p>
+        )}
       </div>
     </button>
   );

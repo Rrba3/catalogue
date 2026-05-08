@@ -6,6 +6,7 @@ export interface Product {
   name: string;
   ageRange: string;
   price?: number;
+  originalPrice?: number;
   image1?: string;
   image2?: string;
   image3?: string;

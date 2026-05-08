@@ -11,12 +11,14 @@ interface CatalogAppProps {
 }
 
 const AGE_LABELS: Record<string, { emoji: string; label: string }> = {
-  "2-4": { emoji: "👶", label: "Âge 2-4 ans" },
-  "4-6": { emoji: "🧒", label: "Âge 4-6 ans" },
-  "6-8": { emoji: "🧑", label: "Âge 6-8 ans" },
+  "1-3": { emoji: "👶", label: "1 - 3 ans" },
+  "2-4": { emoji: "👶", label: "2 - 4 ans" },
+  "3":   { emoji: "👶", label: "3 ans" },
+  "4-6": { emoji: "🧒", label: "4 - 6 ans" },
+  "6-8": { emoji: "🧑", label: "6 - 8 ans" },
 };
 
-const AGE_ORDER = ["2-4", "4-6", "6-8"];
+const AGE_ORDER = ["1-3", "2-4", "3", "4-6", "6-8"];
 
 export default function CatalogApp({ products }: CatalogAppProps) {
   const [activeTab, setActiveTab] = useState<Category>("cars");
@@ -53,25 +55,32 @@ export default function CatalogApp({ products }: CatalogAppProps) {
 
         </div>
 
-        {/* Product grid */}
-        {filteredProducts.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-            {filteredProducts.map((product, index) => (
-              <div
-                key={product.id}
-                style={{ animationDelay: `${index * 80}ms` }}
-              >
-                <ProductCard
-                  product={product}
-                  onClick={() => setSelectedProduct(product)}
-                />
-              </div>
-            ))}
+        {/* Products grouped by age */}
+        {filteredProducts.length > 0 ? (
+          <div className="space-y-12">
+            {AGE_ORDER.filter((age) => groupedProducts[age]?.length > 0).map((age) => {
+              const meta = AGE_LABELS[age] ?? { emoji: "🎁", label: `${age} ans` };
+              return (
+                <section key={age}>
+                  <h3 className="text-xl font-semibold text-foreground mb-5 flex items-center gap-2">
+                    <span>{meta.emoji}</span>
+                    <span>{meta.label}</span>
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    {groupedProducts[age].map((product, index) => (
+                      <div key={product.id} style={{ animationDelay: `${index * 80}ms` }}>
+                        <ProductCard
+                          product={product}
+                          onClick={() => setSelectedProduct(product)}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              );
+            })}
           </div>
-        )}
-
-        {/* Empty state */}
-        {filteredProducts.length === 0 && (
+        ) : (
           <div className="text-center py-20">
             <p className="text-6xl mb-4">🔍</p>
             <p className="text-xl text-muted">
