@@ -172,14 +172,6 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               </p>
             </div>
 
-            {/* Action Buttons */}
-            <div className="mt-6 flex flex-col gap-3">
-              <button
-                className="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-6 rounded-xl transition-colors duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-primary/30"
-              >
-                🛒 Ajouter au panier
-              </button>
-            </div>
           </div>
         </div>
       </div>

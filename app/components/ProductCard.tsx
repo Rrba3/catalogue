@@ -38,7 +38,7 @@ export default function ProductCard({ product, onClick }: ProductCardProps) {
         </h3>
 
         {product.price != null ? (
-          <div className="mt-2 flex items-center gap-2 flex-wrap">
+          <div className="mt-2 flex items-center justify-center gap-2 flex-wrap">
             <span className="text-base font-bold text-primary">
               {product.price.toLocaleString("fr-FR")} TND
             </span>
