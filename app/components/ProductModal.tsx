@@ -165,7 +165,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             </div>
 
             {/* Description */}
-            <div className="mt-6 p-4 bg-slate-50 rounded-xl border border-slate-100 flex-1">
+            <div className="mt-6 p-4 bg-slate-50 rounded-xl border border-slate-100">
               <h3 className="font-semibold text-foreground mb-2">Description</h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 {product.description}
