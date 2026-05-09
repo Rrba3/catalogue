@@ -154,7 +154,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             <div className="flex flex-row items-center justify-between gap-4 mt-3 flex-wrap">
               <div className="flex flex-col items-center gap-2">
                 {product.reference && (
-                  <span className="text-sm text-muted">Ref: {product.reference}</span>
+                  <span className="text-sm text-muted">Réf : {product.reference}</span>
                 )}
                 <span className="text-sm font-medium bg-primary/10 text-primary px-3 py-1 rounded-full">
                   Âge {product.ageRange} ans
