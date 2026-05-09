@@ -352,5 +352,73 @@
     "dimensions": "69 x 45 x 80 cm",
     "description": "Autopoussoir 4x4  avec volant directionnel Look baroudeur réaliste, parfait pour les petits aventuriers en herbe !",
     "badge": "Nouveau"
+  },
+  {
+    "id": 41,
+    "category": "trotinette",
+    "reference": "Y-ST8815",
+    "name": "Trotinette",
+    "ageRange": "2-4",
+    "price": 229,
+    "promotion": true,
+    "image1": "Y-ST8815/1.png",
+    "image2": "Y-ST8815/2.png",
+    "video": "https://www.youtube.com/watch?v=sGFMhBDy1HI",
+    "description": "Cette trottinette lumineuse est équipée de lumières LED éclatantes qui s'illuminent simultanément sur le phare, la potence et le large plateau à pois, créant un spectacle de couleurs éblouissant qui captive l'attention des enfants et enrichit leur expérience de conduite, notamment par faible luminosité. De plus, les roues avant et arrière clignotantes ajoutent une touche d'excitation supplémentaire.",
+    "badge": "Nouveau"
+  },
+  {
+    "id": 42,
+    "category": "trotinette",
+    "reference": "Y-ST3106",
+    "name": "Trotinette",
+    "ageRange": "2-4",
+    "price": 129,
+    "promotion": true,
+    "image1": "Y-ST3106/1.png",
+    "video": "https://www.youtube.com/watch?v=sGFMhBDy1HI",
+    "description": "Cette trottinette lumineuse est équipée de lumières LED éclatantes qui s'illuminent simultanément sur le phare, la potence et le large plateau à pois, créant un spectacle de couleurs éblouissant qui captive l'attention des enfants et enrichit leur expérience de conduite, notamment par faible luminosité. De plus, les roues avant et arrière clignotantes ajoutent une touche d'excitation supplémentaire.",
+    "badge": "Nouveau"
+  },
+  {
+    "id": 43,
+    "category": "trotinette",
+    "reference": "Y-ST2014",
+    "name": "Trotinette",
+    "ageRange": "2-4",
+    "price": 229,
+    "promotion": true,
+    "image1": "Y-ST2014/1.png",
+    "video": "https://www.youtube.com/watch?v=sGFMhBDy1HI",
+    "description": "Cette trottinette lumineuse est équipée de lumières LED éclatantes qui s'illuminent simultanément sur le phare, la potence et le large plateau à pois, créant un spectacle de couleurs éblouissant qui captive l'attention des enfants et enrichit leur expérience de conduite, notamment par faible luminosité. De plus, les roues avant et arrière clignotantes ajoutent une touche d'excitation supplémentaire.",
+    "badge": "Nouveau"
+  },
+  {
+    "id": 44,
+    "category": "trotinette",
+    "reference": "Y-ST5334",
+    "name": "Trotinette",
+    "ageRange": "2-4",
+    "price": 179,
+    "promotion": true,
+    "image1": "Y-ST5334/1.png",
+    "video": "https://www.youtube.com/watch?v=sGFMhBDy1HI",
+    "description": "Cette trottinette lumineuse est équipée de lumières LED éclatantes qui s'illuminent simultanément sur le phare, la potence et le large plateau à pois, créant un spectacle de couleurs éblouissant qui captive l'attention des enfants et enrichit leur expérience de conduite, notamment par faible luminosité. De plus, les roues avant et arrière clignotantes ajoutent une touche d'excitation supplémentaire.",
+    "badge": "Nouveau"
+  },
+  {
+    "id": 45,
+    "category": "trotinette",
+    "reference": "Y-ST8103",
+    "name": "Trotinette",
+    "ageRange": "2-4",
+    "price": 229,
+    "promotion": true,
+    "image1": "Y-ST8103/1.png",
+    "video": "https://www.youtube.com/watch?v=sGFMhBDy1HI",
+    "description": "Cette trottinette lumineuse est équipée de lumières LED éclatantes qui s'illuminent simultanément sur le phare, la potence et le large plateau à pois, créant un spectacle de couleurs éblouissant qui captive l'attention des enfants et enrichit leur expérience de conduite, notamment par faible luminosité. De plus, les roues avant et arrière clignotantes ajoutent une touche d'excitation supplémentaire.",
+    "badge": "Nouveau"
   }
 ]
+
+
