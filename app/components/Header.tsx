@@ -5,7 +5,7 @@ import type { Category } from "@/app/types";
 const TABS: { value: Category; label: string; icon: string }[] = [
   { value: "cars", label: "Voitures", icon: "🚗" },
   { value: "motos", label: "Motos", icon: "🏍️" },
-  { value: "bicycles", label: "Vélos", icon: "🚲" },
+  { value: "bicycles", label: "Auto Poussoir", icon: "🛺" },
   { value: "trotinette", label: "Trotinette", icon: "🛴" },
 ];
 
