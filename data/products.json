@@ -78,6 +78,37 @@
     "dimensions": "140 × 82 × 62 cm",
     "description": "SUV haut de gamme conçu pour les enfants plus âgés en quête d'aventure. Design biplace",
     "badge": "Populaire"
+  },  {
+    "id": 17,
+    "category": "cars",
+    "reference": "Y-MB9188",
+    "name": "Mercedes-Benz Classe G",
+    "ageRange": "2-4",
+    "price": 990.4,
+    "promotion": true,
+    "image1": "Y-MB9188/1.png",
+    "image2": "Y-MB9188/2.png",
+    "video": "https://www.youtube.com/watch?v=sGFMhBDy1HI",
+    "dimensions": "122 x 60 x 68 cm",
+    "description": "Voiture électrique au look sportif suv, avec roues larges pour une conduite tout-terrain stable. Design rouge attractif, idéal pour les enfants à la recherche d'aventure en plein air.",
+    "badge": "Populaire"
+  },  
+  {
+    "id": 18,
+    "category": "cars",
+    "reference": "Y-MB1032-R",
+    "name": "Mercedes",
+    "ageRange": "2-4",
+    "price": 850.4,
+    "promotion": true,
+    "image1": "Y-MB1032-R/1.png",
+    "image2": "Y-MB1032-R/2.jpg",
+    "image3": "Y-MB1032-R/4.png",
+    "image4": "Y-MB1032-R/3.png",
+    "video": "https://www.youtube.com/watch?v=sGFMhBDy1HI",
+    "dimensions": "115 x 65 x 80 cm",
+    "description": "voiture électrique pour enfants, parfait pour des aventures tout-terrain.Équipé de pneus larges et d’un siège confortable, idéal pour les jeunes pilotes.",
+    "badge": "Populaire"
   },
   {
     "id": 21,
