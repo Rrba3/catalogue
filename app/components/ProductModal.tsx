@@ -94,7 +94,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                 <img
                   src={images[activeImageIndex]}
                   alt={product.name}
-                  className="w-full h-full object-cover transition-opacity duration-300"
+                  className="w-full h-full object-contain transition-opacity duration-300"
                 />
               )}
             </div>
@@ -117,7 +117,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                   <img
                     src={img}
                     alt={`${product.name} view ${idx + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </button>
               ))}
