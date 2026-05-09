@@ -20,7 +20,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
   const [showVideo, setShowVideo] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  const images = [product.image1, product.image2, product.image3, product.image4].filter(Boolean) as string[];
+  const images = [product.image, product.image1, product.image2, product.image3, product.image4, product.image5, product.image6].filter(Boolean) as string[];
 
   // Reset video and image index when product changes
   useEffect(() => {

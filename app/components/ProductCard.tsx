@@ -9,7 +9,7 @@ interface ProductCardProps {
 }
 //test
 export default function ProductCard({ product, onClick }: ProductCardProps) {
-  const images = [product.image1, product.image2, product.image3, product.image4].filter(Boolean) as string[];
+  const images = [product.image, product.image1, product.image2, product.image3, product.image4, product.image5, product.image6].filter(Boolean) as string[];
   const [activeIdx, setActiveIdx] = useState(0);
 
   return (
