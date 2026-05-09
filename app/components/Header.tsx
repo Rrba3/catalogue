@@ -19,7 +19,7 @@ export default function Header({ activeTab, onTabChange }: HeaderProps) {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-border py-3 sm:py-0">
       <div className="max-w-[1200px] mx-auto px-2 sm:px-6 min-h-[4rem] flex items-center justify-between">
         {/* TODO: replace /logo.png with your actual logo file */}
-        <img src="/logo.png" alt="Logo" className="h-20 w-auto object-contain" />
+        <img src="/logo.png" alt="Logo" className="hidden sm:block h-20 w-auto object-contain" />
         <nav className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-2 w-full">
           {/* First 3 tabs in a row */}
           <div className="flex justify-center gap-2 w-full sm:w-auto">
