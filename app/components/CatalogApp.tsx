@@ -10,15 +10,30 @@ interface CatalogAppProps {
   products: Product[];
 }
 
-const AGE_LABELS: Record<string, { emoji: string; label: string }> = {
-  "1-3": { emoji: "👶", label: "1 - 3 ans" },
-  "2-4": { emoji: "👶", label: "2 - 4 ans" },
-  "3":   { emoji: "👶", label: "3 ans" },
-  "4-6": { emoji: "🧒", label: "4 - 6 ans" },
-  "6-8": { emoji: "🧑", label: "6 - 8 ans" },
-};
+const getAgeMeta = (age: string) => {
+  const customLabels: Record<string, { emoji: string; label: string }> = {
+    "1-3": { emoji: "👶", label: "1 - 3 ans" },
+    "1-4": { emoji: "👶", label: "1 - 4 ans" },
+    "2-4": { emoji: "👶", label: "2 - 4 ans" },
+    "2-6": { emoji: "🧒", label: "2 - 6 ans" },
+    "2-7": { emoji: "🧒", label: "2 - 7 ans" },
+    "2-8": { emoji: "🧒", label: "2 - 8 ans" },
+    "3":   { emoji: "👶", label: "3 ans" },
+    "4-6": { emoji: "🧒", label: "4 - 6 ans" },
+    "6-8": { emoji: "🧑", label: "6 - 8 ans" },
+  };
 
-const AGE_ORDER = ["1-3", "2-4", "3", "4-6", "6-8"];
+  if (customLabels[age]) return customLabels[age];
+
+  const num = parseInt(age);
+  let emoji = "🎁";
+  if (!isNaN(num)) {
+    if (num <= 3) emoji = "👶";
+    else if (num <= 6) emoji = "🧒";
+    else emoji = "🧑";
+  }
+  return { emoji, label: age.includes("-") ? `${age.replace("-", " - ")} ans` : `${age} ans` };
+};
 
 export default function CatalogApp({ products }: CatalogAppProps) {
   const [activeTab, setActiveTab] = useState<Category>("cars");
@@ -42,6 +57,15 @@ export default function CatalogApp({ products }: CatalogAppProps) {
     return groups;
   }, [filteredProducts]);
 
+  const sortedAges = useMemo(() => {
+    return Object.keys(groupedProducts).sort((a, b) => {
+      const numA = parseInt(a);
+      const numB = parseInt(b);
+      if (numA !== numB) return numA - numB;
+      return a.localeCompare(b);
+    });
+  }, [groupedProducts]);
+
   return (
     <>
       <Header activeTab={activeTab} onTabChange={setActiveTab} />
@@ -52,14 +76,13 @@ export default function CatalogApp({ products }: CatalogAppProps) {
           <h2 className="text-3xl font-bold text-foreground capitalize">
             {activeTab === "motos" ? "Motos" : activeTab === "cars" ? "Voitures" : "Vélos"}
           </h2>
-
         </div>
 
         {/* Products grouped by age */}
         {filteredProducts.length > 0 ? (
           <div className="space-y-12">
-            {AGE_ORDER.filter((age) => groupedProducts[age]?.length > 0).map((age) => {
-              const meta = AGE_LABELS[age] ?? { emoji: "🎁", label: `${age} ans` };
+            {sortedAges.map((age) => {
+              const meta = getAgeMeta(age);
               return (
                 <section key={age}>
                   <h3 className="text-xl font-semibold text-foreground mb-5 flex items-center gap-2">

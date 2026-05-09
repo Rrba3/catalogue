@@ -3,8 +3,8 @@
     "id": 11,
     "category": "cars",
     "reference": "Y-MB8856",
-    "name": "FORD electrique",
-    "ageRange": "2-4",
+    "name": "Jeep electrique",
+    "ageRange": "2-8",
     "price": 990.400,
     "promotion": true,
     "image1": "Y-MB8856/1.webp",
@@ -20,8 +20,8 @@
     "category": "cars",
     "reference": "Y-MB3324",
     "name": "FORD electrique",
-    "ageRange": "2-4",
-    "price":  750.4,
+    "ageRange": "2-6",
+    "price": 750.4,
     "promotion": true,
     "image": "Y-MB3324/1.webp",
     "image1": "Y-MB3324/3.webp",
@@ -68,7 +68,7 @@
     "category": "cars",
     "reference": "Y-MB912",
     "name": "Mini Tesla Model S",
-    "ageRange": "2-4",
+    "ageRange": "2-8",
     "price": 850.4,
     "promotion": true,
     "image1": "Y-MB912/1.webp",
@@ -160,7 +160,6 @@
     "description": "Prêt pour le rock ! Ce tricycle inspiré de Harley-Davidson présente des accents chromés, des sons de moteur réalistes, des lumières LED et une conception stable à trois roues pour rouler en toute confiance.",
     "badge": "Nouveau"
   },
-  
   {
     "id": 31,
     "category": "bicycles",
