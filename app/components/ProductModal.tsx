@@ -192,7 +192,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             </div>
             {/* Dimensions */}
             <div className="flex items-center justify-center gap-2 mt-3 text-sm text-muted text-[25px]">
-              <span>📏 {product.dimensions}</span>
+              <span>{product.dimensions}</span>
             </div>
 
           </div>
