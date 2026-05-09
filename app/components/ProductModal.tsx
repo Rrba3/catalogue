@@ -151,17 +151,17 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               {product.name}
             </h2>
             {/* Reference + Age | Price row */}
-            <div className="flex items-center justify-between gap-4 mt-3 flex-wrap">
-              <div className="flex items-center gap-2">
+            <div className="flex flex-row items-center justify-between gap-4 mt-3 flex-wrap">
+              <div className="flex flex-col items-center gap-2">
                 {product.reference && (
-                  <span className="text-sm text-muted">{product.reference}</span>
+                  <span className="text-sm text-muted">Ref: {product.reference}</span>
                 )}
                 <span className="text-sm font-medium bg-primary/10 text-primary px-3 py-1 rounded-full">
                   Âge {product.ageRange} ans
                 </span>
               </div>
               {product.price != null && (
-                <div className="flex items-center gap-2">
+                <div className="flex  items-center gap-2">
                   <span className="text-xl font-bold text-primary">
                     {product.price.toLocaleString("fr-FR")} TND
                   </span>
@@ -179,10 +179,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               )}
             </div>
 
-            {/* Dimensions */}
-            <div className="flex items-center gap-2 mt-3 text-sm text-muted">
-              <span>📏 {product.dimensions}</span>
-            </div>
+
 
             {/* Description */}
             <div className="mt-6 p-4 bg-slate-50 rounded-xl border border-slate-100">
@@ -190,6 +187,12 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               <p className="text-sm text-slate-600 leading-relaxed">
                 {product.description}
               </p>
+
+
+            </div>
+            {/* Dimensions */}
+            <div className="flex items-center justify-center gap-2 mt-3 text-sm text-muted text-[25px]">
+              <span>📏 {product.dimensions}</span>
             </div>
 
           </div>
