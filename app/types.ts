@@ -4,9 +4,10 @@ export interface Product {
   id: number;
   category: Category;
   name: string;
+  reference?: string;
   ageRange: string;
   price?: number;
-  originalPrice?: number;
+  promotion?: boolean;
   image1?: string;
   image2?: string;
   image3?: string;

@@ -20,8 +20,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
   const [showVideo, setShowVideo] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  // For testing e-commerce gallery feel, we repeat the main image as we only have 1 image per product
-  const mockImages = [product.image1, product.image2, product.image3, product.image4];
+  const images = [product.image1, product.image2, product.image3, product.image4].filter(Boolean) as string[];
 
   // Reset video and image index when product changes
   useEffect(() => {
@@ -93,7 +92,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
                 />
               ) : (
                 <img
-                  src={mockImages[activeImageIndex]}
+                  src={images[activeImageIndex]}
                   alt={product.name}
                   className="w-full h-full object-cover transition-opacity duration-300"
                 />
@@ -102,7 +101,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
             {/* Thumbnails */}
             <div className="flex gap-3 overflow-x-auto pb-2 custom-scrollbar">
-              {mockImages.map((img, idx) => (
+              {images.map((img, idx) => (
                 <button
                   key={idx}
                   onClick={() => {
@@ -151,12 +150,33 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             <h2 className="text-3xl font-bold text-foreground leading-tight">
               {product.name}
             </h2>
-
-            {/* Age */}
-            <div className="flex items-center gap-2 mt-4">
-              <span className="text-sm font-medium bg-primary/10 text-primary px-3 py-1 rounded-full">
-                Âge {product.ageRange} ans
-              </span>
+            {/* Reference + Age | Price row */}
+            <div className="flex items-center justify-between gap-4 mt-3 flex-wrap">
+              <div className="flex items-center gap-2">
+                {product.reference && (
+                  <span className="text-sm text-muted">{product.reference}</span>
+                )}
+                <span className="text-sm font-medium bg-primary/10 text-primary px-3 py-1 rounded-full">
+                  Âge {product.ageRange} ans
+                </span>
+              </div>
+              {product.price != null && (
+                <div className="flex items-center gap-2">
+                  <span className="text-xl font-bold text-primary">
+                    {product.price.toLocaleString("fr-FR")} TND
+                  </span>
+                  {product.promotion && (
+                    <>
+                      <span className="text-sm text-muted line-through">
+                        {Math.round(product.price / 0.8).toLocaleString("fr-FR")} TND
+                      </span>
+                      <span className="text-xs font-bold bg-red-500 text-white px-2 py-0.5 rounded-full">
+                        -20%
+                      </span>
+                    </>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Dimensions */}
