@@ -56,9 +56,9 @@
     "ageRange": "4-8",
     "price": 990,
     "promotion": true,
-    "image1": "J-MB6695/1.webp",
-    "image2": "J-MB6695/2.webp",
+    "image1": "J-MB6695/4.png",
     "image3": "J-MB6695/size.png",
+    "video": "https://youtube.com/shorts/DojQagrZCMs",
     "dimensions": "📏 110 x 71 x 57 cm",
     "description": "SUV haut de gamme conçu pour les enfants plus âgés en quête d'aventure",
     "badge": "Populaire"
@@ -185,6 +185,7 @@
     "image3": "J-MB6189/12.webp",
     "image4": "J-MB6189/20.webp",
     "image5": "J-MB6189/size.png",
+    "video": "https://youtube.com/shorts/LLgoKA4fHbY",
     "dimensions": "📏 97 x 47 x 61 cm",
     "description": "Prêt pour le rock ! Ce tricycle inspiré de Harley-Davidson présente des accents chromés, des sons de moteur réalistes, des lumières LED et une conception stable à trois roues pour rouler en toute confiance.",
     "badge": "Nouveau"
@@ -200,6 +201,7 @@
     "image1": "Y-MB4189/1.png",
     "image2": "Y-MB4189/2.png",
     "image3": "Y-MB4189/size.png",
+    "video": "https://youtube.com/shorts/L1yTLXU1X-o",
     "dimensions": "📏 105 x 56 x 68 cm",
     "description": "Moto électrique pour enfants, parfaite pour une conduite stable tout-terrain.Équipée de trois roues robustes et d'un look sportif, idéale pour les jeunes aventuriers.",
     "badge": "Nouveau"
@@ -215,6 +217,7 @@
     "image1": "J-MB8008/1.png",
     "image2": "J-MB8008/2.png",
     "image3": "J-MB8008/size.jpg",
+    "video": "https://youtu.be/D99YNm4ueSs",
     "dimensions": "📏 115 x 59 x 73 cm",
     "description": "Moto électrique pour enfants au design blanc, parfaite pour une conduite stable tout-terrain.Équipée de trois roues robustes et d'un look sportif, idéale pour les jeunes aventuriers.",
     "badge": "Nouveau"
@@ -279,6 +282,7 @@
     "image1": "BBL-MB0122/1.png",
     "image2": "BBL-MB0122/2.png",
     "image3": "BBL-MB0122/size.png",
+    "video": "https://youtube.com/shorts/7zzyK5a-kkM",
     "dimensions": "📏 90 x 47 x 71 cm",
     "description": "Moto électrique pour enfants, parfaite pour une conduite stable tout-terrain.Équipée de trois roues robustes et d'un look sportif, idéale pour les jeunes aventuriers.",
     "badge": "Nouveau"
@@ -341,6 +345,7 @@
     "promotion": true,
     "image1": "Y-ST8815/1.png",
     "image2": "Y-ST8815/2.png",
+    "video": "https://youtube.com/shorts/8vlFH7PCnXk",
     "description": "Cette trottinette lumineuse est équipée de lumières LED éclatantes qui s'illuminent simultanément sur le phare, la potence et le large plateau à pois, créant un spectacle de couleurs éblouissant qui captive l'attention des enfants et enrichit leur expérience de conduite, notamment par faible luminosité. De plus, les roues avant et arrière clignotantes ajoutent une touche d'excitation supplémentaire.",
     "badge": "Nouveau"
   },
@@ -365,6 +370,7 @@
     "price": 229,
     "promotion": true,
     "image1": "Y-ST2014/1.png",
+    "video": "https://youtu.be/dba5pjhtVj8",
     "description": "Cette trottinette lumineuse est équipée de lumières LED éclatantes qui s'illuminent simultanément sur le phare, la potence et le large plateau à pois, créant un spectacle de couleurs éblouissant qui captive l'attention des enfants et enrichit leur expérience de conduite, notamment par faible luminosité. De plus, les roues avant et arrière clignotantes ajoutent une touche d'excitation supplémentaire.",
     "badge": "Nouveau"
   },
@@ -377,6 +383,7 @@
     "price": 179,
     "promotion": true,
     "image1": "Y-ST5334/1.png",
+    "video": "https://youtube.com/shorts/jeJbIKX964A",
     "description": "Cette trottinette lumineuse est équipée de lumières LED éclatantes qui s'illuminent simultanément sur le phare, la potence et le large plateau à pois, créant un spectacle de couleurs éblouissant qui captive l'attention des enfants et enrichit leur expérience de conduite, notamment par faible luminosité. De plus, les roues avant et arrière clignotantes ajoutent une touche d'excitation supplémentaire.",
     "badge": "Nouveau"
   },
