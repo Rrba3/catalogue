@@ -60,7 +60,7 @@ export default function Header({ activeTab, onTabChange }: HeaderProps) {
         {/* Contact buttons — TODO: replace with real phone number and Facebook URL */}
         <div className="flex items-center gap-2 shrink-0">
           <a
-            href="tel:+213XXXXXXXXX"
+            href="tel:+21625240393"
             className="phone-vibrate flex items-center gap-1.5 bg-green-500 hover:bg-green-600 text-white text-xs sm:text-sm font-semibold px-3 py-2 rounded-full transition-colors duration-200 shadow-md whitespace-nowrap"
           >
             📞 <span className="hidden sm:inline">25 240 393</span>
